@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "000000000000000000000001",
+    "firstname": "Rose",
+    "lastname": "Sorfa",
+    "username": "rose",
+    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW"
+  },
+  {
+    "_id": "000000000000000000000001",
+    "firstname": "Clint",
+    "lastname": "Owen",
+    "username": "clint",
+    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW"
+  },
+  {
+    "_id": "000000000000000000000001",
+    "firstname": "Test",
+    "lastname": "User",
+    "username": "testuser",
+    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW"
+  }
+]
