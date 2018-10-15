@@ -10,7 +10,7 @@ const router = express.Router();
 router.post('/', (req, res, next) => {
 
   /***** Never trust users - validate input *****/
-  const requiredFields = ['firstname', 'username', 'password'];
+  const requiredFields = ['username', 'password'];
   const missingField = requiredFields.find(field => !(field in req.body));
 
   if (missingField) {
@@ -19,7 +19,7 @@ router.post('/', (req, res, next) => {
     return next(err);
   }
 
-  const stringFields = ['firstname', 'lastname', 'username', 'password'];
+  const stringFields = ['firstName', 'lastName', 'username', 'password'];
   const nonStringField = stringFields.find(
     field => field in req.body && typeof req.body[field] !== 'string'
   );
@@ -70,15 +70,15 @@ router.post('/', (req, res, next) => {
   }
 
   // Username and password were validated as pre-trimmed
-  let { username, password, firstname, lastname = '' } = req.body;
-  firstname = firstname.trim();
-  lastname = lastname.trim();
+  let { username, password, firstName, lastName = '' } = req.body;
+  firstName = firstName.trim();
+  lastName = lastName.trim();
 
   return User.hashPassword(password)
     .then(digest => {
       const newUser = {
-        firstname,
-        lastname,
+        firstName,
+        lastName,
         username,
         password: digest
       };
