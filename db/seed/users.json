@@ -7,15 +7,15 @@
     "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW",
     "spaced_list": [
       {
-        "id": "111111111111111111111111",
+        "scientist": "111111111111111111111111",
         "mValue": 1
       },
       {
-        "id": "111111111111111111111112",
+        "scientist": "111111111111111111111112",
         "mValue": 1
       },
       {
-        "id": "111111111111111111111113",
+        "scientist": "111111111111111111111113",
         "mValue": 1
       }
     ]
@@ -28,15 +28,15 @@
     "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW",
     "spaced_list": [
       {
-        "id": "111111111111111111111111",
+        "scientist": "111111111111111111111111",
         "mValue": 1
       },
       {
-        "id": "111111111111111111111112",
+        "scientist": "111111111111111111111112",
         "mValue": 1
       },
       {
-        "id": "111111111111111111111113",
+        "scientist": "111111111111111111111113",
         "mValue": 1
       }
     ]
@@ -49,15 +49,15 @@
     "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW",
     "spaced_list": [
       {
-        "id": "111111111111111111111111",
+        "scientist": "111111111111111111111111",
         "mValue": 1
       },
       {
-        "id": "111111111111111111111112",
+        "scientist": "111111111111111111111112",
         "mValue": 1
       },
       {
-        "id": "111111111111111111111113",
+        "scientist": "111111111111111111111113",
         "mValue": 1
       }
     ]

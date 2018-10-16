@@ -10,7 +10,7 @@ const schema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   spaced_list: [{
-    id: { type: mongoose.Schema.Types.ObjectId, ref: 'Scientist', required: true },
+    scientist: { type: mongoose.Schema.Types.ObjectId, ref: 'Scientist', required: true },
     mValue: { type: Number, required: true, default: 1 }
   }]
 });
