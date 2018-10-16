@@ -3,6 +3,7 @@
 const express = require('express');
 
 const User = require('../models/user');
+const Scientist = require('../models/scientist');
 
 const router = express.Router();
 
@@ -74,13 +75,25 @@ router.post('/', (req, res, next) => {
   firstName = firstName.trim();
   lastName = lastName.trim();
 
-  return User.hashPassword(password)
+  let spaced_list = [];
+
+  return Scientist.find()
+    .then(scientists => {
+      scientists.forEach(scientist => {
+        spaced_list.push({
+          id: scientist.id,
+          mValue: 1
+        });
+      });
+      return User.hashPassword(password);
+    })
     .then(digest => {
       const newUser = {
         firstName,
         lastName,
         username,
-        password: digest
+        password: digest,
+        spaced_list
       };
       return User.create(newUser);
     })
@@ -95,5 +108,7 @@ router.post('/', (req, res, next) => {
       next(err);
     });
 });
+
+//api/users/questions
 
 module.exports = router;

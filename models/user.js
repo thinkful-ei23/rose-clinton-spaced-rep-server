@@ -8,7 +8,11 @@ const schema = new mongoose.Schema({
   firstName: { type: String, required: true, default: '' },
   lastName: { type: String, default: '' },
   username: { type: String, required: true, unique: true },
-  password: { type: String, required: true }
+  password: { type: String, required: true },
+  spaced_list: [{
+    id: { type: mongoose.Schema.Types.ObjectId, ref: 'Scientist', required: true },
+    mValue: { type: Number, required: true, default: 1 }
+  }]
 });
 
 // Transform output during `res.json(data)`, `console.log(data)` etc.

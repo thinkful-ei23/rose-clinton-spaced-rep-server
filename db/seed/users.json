@@ -4,20 +4,62 @@
     "firstName": "Rose",
     "lastName": "Sorfa",
     "username": "rose",
-    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW"
+    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW",
+    "spaced_list": [
+      {
+        "id": "111111111111111111111111",
+        "mValue": 1
+      },
+      {
+        "id": "111111111111111111111112",
+        "mValue": 1
+      },
+      {
+        "id": "111111111111111111111113",
+        "mValue": 1
+      }
+    ]
   },
   {
     "_id": "000000000000000000000002",
     "firstName": "Clint",
     "lastName": "Owen",
     "username": "clint",
-    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW"
+    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW",
+    "spaced_list": [
+      {
+        "id": "111111111111111111111111",
+        "mValue": 1
+      },
+      {
+        "id": "111111111111111111111112",
+        "mValue": 1
+      },
+      {
+        "id": "111111111111111111111113",
+        "mValue": 1
+      }
+    ]
   },
   {
     "_id": "000000000000000000000003",
     "firstName": "Test",
     "lastName": "User",
     "username": "testuser",
-    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW"
+    "password": "$2a$10$.xzf5XDGNZIRguI6kKCSJ.xEfZF4hkTuHTCilKDvY6W5SyZHP3QYW",
+    "spaced_list": [
+      {
+        "id": "111111111111111111111111",
+        "mValue": 1
+      },
+      {
+        "id": "111111111111111111111112",
+        "mValue": 1
+      },
+      {
+        "id": "111111111111111111111113",
+        "mValue": 1
+      }
+    ]
   }
 ]
