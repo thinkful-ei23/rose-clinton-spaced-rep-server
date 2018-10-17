@@ -75,12 +75,12 @@ router.post('/', (req, res, next) => {
   firstName = firstName.trim();
   lastName = lastName.trim();
 
-  let spaced_list = [];
+  let questions = [];
 
   return Scientist.find()
     .then(scientists => {
       scientists.forEach(scientist => {
-        spaced_list.push({
+        questions.push({
           id: scientist.id,
           mValue: 1
         });
@@ -93,7 +93,7 @@ router.post('/', (req, res, next) => {
         lastName,
         username,
         password: digest,
-        spaced_list
+        questions
       };
       return User.create(newUser);
     })
