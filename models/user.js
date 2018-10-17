@@ -9,10 +9,12 @@ const schema = new mongoose.Schema({
   lastName: { type: String, default: '' },
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  spaced_list: [{
+  questions: [{
     scientist: { type: mongoose.Schema.Types.ObjectId, ref: 'Scientist' },
-    mValue: { type: Number, required: true, default: 1 }
-  }]
+    mValue: { type: Number, required: true, default: 1 },
+    next: Number
+  }],
+  head: { type: Number, default: 0 }
 });
 
 // Transform output during `res.json(data)`, `console.log(data)` etc.
