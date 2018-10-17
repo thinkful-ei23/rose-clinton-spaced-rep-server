@@ -20,4 +20,17 @@ router.get('/next', (req, res, next) => {
     });
 });
 
+router.post('/answers', (req, res, next) => {
+  const userId = req.user.id;
+  User.findById(userId)
+    .then(user => {
+      const answeredQuestion = user.questions[user.head]; //save value of question at current head
+      const answeredQuestionIndex = user.head; //saves location of answered question
+      if(req.userAnswer === true) { 
+        answeredQuestion.mValue *= 2; //if correct, double the mVal
+        
+      }    
+    });
+});
+
 module.exports = router;
