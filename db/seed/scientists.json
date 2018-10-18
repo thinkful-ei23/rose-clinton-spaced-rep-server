@@ -54,9 +54,33 @@
     "photo": "https://i.imgur.com/D3FuTsq.jpg"
   },
   {
-    "_id": "111111111111111111111110",
+    "_id": "111111111111111111111121",
     "name": "Vera Rubin",
     "info": "Astronomer who pionered work on galaxy rotation rates and discovered dark matter.",
     "photo": "https://i.imgur.com/sQxhtZU.jpg"
+  },
+  {
+    "_id": "111111111111111111111122",
+    "name": "Barbara McClintock",
+    "info": "Cytogeneticist. The only woman to receive an unshared Nobel Prize in Physiology or Medicine for her discovery of genetic transposition.",
+    "photo": "https://i.imgur.com/Mdkj7lT.jpg"
+  },
+  {
+    "_id": "111111111111111111111123",
+    "name": "Ida Noddack",
+    "info": "Chemist and physicist. Discovered element 75, rhenium. Nominated three times for the Nobel Prize in Chemistry.",
+    "photo": "https://i.imgur.com/bdDCDr4.jpg"
+  },
+  {
+    "_id": "111111111111111111111124",
+    "name": "Rachel Carson",
+    "info": "Marine biologist, author, and conservationist.",
+    "photo": "https://i.imgur.com/kHEFAXu.jpg"
+  },
+  {
+    "_id": "111111111111111111111125",
+    "name": "Jane Goodall",
+    "info": "Primatologist and top expert on chimpanzees.",
+    "photo": "https://i.imgur.com/oCvzBQs.jpg"
   }
 ]
