@@ -37,7 +37,7 @@ const router = express.Router();
 router.post('/', (req, res, next) => {
 
   /***** Never trust users - validate input *****/
-  const requiredFields = ['username', 'password'];
+  const requiredFields = ['username', 'password', 'firstName', 'lastName'];
   const missingField = requiredFields.find(field => !(field in req.body));
 
   if (missingField) {
@@ -105,12 +105,13 @@ router.post('/', (req, res, next) => {
 
   return Scientist.find()
     .then(scientists => {
-      scientists.forEach(scientist => {
+      for(let i = 0; i < scientists.length; i++) {
         questions.push({
-          id: scientist.id,
-          mValue: 1
+          scientist: scientists[i]._id,
+          mValue: 1,
+          next: i+1
         });
-      });
+      }
       return User.hashPassword(password);
     })
     .then(digest => {
