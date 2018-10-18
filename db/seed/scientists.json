@@ -50,13 +50,13 @@
   {
     "_id": "111111111111111111111119",
     "name": "Gertrude Elion",
-    "info": "Biochemist and pharmacologist who worked on inventing many drugs to treat major diseases, including AIDS.",
+    "info": "Biochemist and pharmacologist who invented many drugs to treat major diseases, including AIDS.",
     "photo": "https://i.imgur.com/D3FuTsq.jpg"
   },
   {
     "_id": "111111111111111111111121",
     "name": "Vera Rubin",
-    "info": "Astronomer who pionered work on galaxy rotation rates and discovered dark matter.",
+    "info": "Astronomer who pionered work on galaxy rotation rates and discovered evidence for the existence of dark matter.",
     "photo": "https://i.imgur.com/sQxhtZU.jpg"
   },
   {
