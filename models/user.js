@@ -14,7 +14,7 @@ const schema = new mongoose.Schema({
     mValue: { type: Number, required: true, default: 1 },
     next: Number
   }],
-  head: { type: Number, default: 0 }
+  head: { type: Number, default: 0 },
 });
 
 // Transform output during `res.json(data)`, `console.log(data)` etc.

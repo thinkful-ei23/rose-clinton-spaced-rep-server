@@ -4,8 +4,34 @@ const express = require('express');
 
 const User = require('../models/user');
 const Scientist = require('../models/scientist');
+const Progress = require('../models/progress');
 
 const router = express.Router();
+
+
+// POST endpoint to post user's progress
+// router.post('/progress', (req, res, next) => {
+//   const { userId } = req.body;
+  
+//   return Progress.findById({userId})
+//     .then(user => {
+//       return Progress.create({
+//         userId: user._id,
+//         score: 0,
+//         correct: 0, 
+//         incorrect: 0,
+//       });
+//     })
+//     .then(result => {
+//       return res.status(201).location('api/users/${result.id}').json(result);
+//     })
+//     .catch(err => {
+//       next(err);
+//     });
+// }); 
+
+
+
 
 /* ========== POST/CREATE AN ITEM ========== */
 router.post('/', (req, res, next) => {
@@ -97,6 +123,12 @@ router.post('/', (req, res, next) => {
       };
       return User.create(newUser);
     })
+    .then(user => {
+      Progress.create({
+        userId: user._id,
+      });
+      return user; 
+    })
     .then(result => {
       return res.status(201).location(`/api/users/${result.id}`).json(result);
     })
@@ -110,3 +142,19 @@ router.post('/', (req, res, next) => {
 });
 
 module.exports = router;
+
+
+// const userId = req.user.id; //or const { id } = req.params ?
+// const { score, correct, incorrect, percentage } = req.body;
+// const updateProgress = { score, correct, incorrect, percentage };
+// User.findByIdAndUpdate(userId, updateProgress, {new: true})
+//   .then(user => {
+//     const score = user.score;
+//     const correct = user.numCorrect;
+//     const incorrect = user.numIncorrect;
+//     const percentage = user.percentage;
+//     res.json(score, correct, incorrect, percentage);
+//   })
+//   .catch(err => {
+//     next(err);
+//   });
