@@ -6,9 +6,11 @@ const { DATABASE_URL } = require('../config');
 
 const User = require('../models/user');
 const Scientist = require('../models/scientist');
+const Progress = require('../models/progress');
 
 const seedUsers = require('../db/seed/users');
 const seedScientists = require('../db/seed/scientists');
+const seedProgresses = require('../db/seed/progresses');
 
 console.log(`Connecting to mongodb at ${DATABASE_URL}`);
 mongoose.connect(DATABASE_URL)
@@ -22,7 +24,8 @@ mongoose.connect(DATABASE_URL)
       Scientist.insertMany(seedScientists),
       // Scientist.createIndexes(),
       User.insertMany(seedUsers),
-      // User.createIndexes()
+      // User.createIndexes(),
+      Progress.insertMany(seedProgresses),
     ]);
   })
   .then(() => {

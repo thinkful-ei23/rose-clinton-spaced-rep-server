@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 const progressSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   score: { type: Number, default: 0 },
-  numCorrect: { type: Number, default: 0 },
-  numIncorrect: {type: Number, default: 0 },
+  correct: { type: Number, default: 0 },
+  incorrect: {type: Number, default: 0 },
 });
 
 

@@ -13,10 +13,25 @@ router.get('/',(req,res,next)=>{
   Progress.findOne({userId})
     .then(progress =>{
       res.json({
-        score: progress.score, 
-        correct: progress.numCorrect, 
-        incorrect: progress.numIncorrect});
+        score: progress.score,
+        correct: progress.correct,
+        incorrect: progress.incorrect});
     })    
+    .catch(err => {
+      next(err);
+    });
+});
+
+router.post('/', (req, res, next) => {
+  const userId = req.user.id;
+  const { correct, incorrect, score } = req.body;
+
+  const newProgress = { correct, incorrect, score };
+  Progress.findOneAndUpdate({userId}, newProgress, { new: true })
+    .then((result) => {
+      console.log(result);
+      res.sendStatus(204);
+    })
     .catch(err => {
       next(err);
     });
