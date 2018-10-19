@@ -6,7 +6,6 @@ const User = require('../models/user');
 
 const router = express.Router();
 
-//api/questions
 router.get('/next', (req, res, next) => {
   const userId = req.user.id;
   User.findById(userId)

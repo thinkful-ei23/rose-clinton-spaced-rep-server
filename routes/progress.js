@@ -8,7 +8,7 @@ const router = express.Router();
 
 // GET endpoint to get user's progress 
 router.get('/',(req,res,next)=>{
-  const userId = req.user.id;  //_id or id 
+  const userId = req.user.id;  
 
   Progress.findOne({userId})
     .then(progress =>{
