@@ -26,7 +26,7 @@ router.post('/answers', (req, res, next) => {
     .then(user => {
       const answeredQuestion = user.questions[user.head]; //save value of question at current head
       const answeredQuestionIndex = user.head; //saves location of answered question
-      if(req.body.userAnswer === true) { 
+      if(req.body.userAnswer === true) {  // checks if userAnswer exists (client sends key of true if correct)
         answeredQuestion.mValue *= 2; //if correct, double the mVal
       } else {
         answeredQuestion.mValue = 1;

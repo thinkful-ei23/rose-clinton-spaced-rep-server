@@ -3,84 +3,112 @@
     "_id": "111111111111111111111111",
     "name": "Katherine Johnson",
     "info": "Mathematician at NASA.",
-    "photo": "https://i.imgur.com/xkJcabo.jpg"
+    "photo": "https://i.imgur.com/xkJcabo.jpg",
+    "attr": "By NASA; restored by Adam Cuerden [Public domain], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Katherine_Johnson" 
   },
   {
     "_id": "111111111111111111111112",
     "name": "Ada Lovelace",
     "info": "English mathematician regarded as the first computer programmer.",
-    "photo": "https://i.imgur.com/m5d3AFz.jpg"
+    "photo": "https://i.imgur.com/m5d3AFz.jpg",
+    "attr": "By Unknown author [Public domain], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Ada_Lovelace"
   },
   {
     "_id": "111111111111111111111113",
     "name": "Grace Hopper",
     "info": "A pioneer of computer programming who invented one of the first compiler related tools.",
-    "photo": "https://i.imgur.com/j8ddYx1.jpg"
+    "photo": "https://i.imgur.com/j8ddYx1.jpg",
+    "attr": "By James S. Davis [Public domain], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Grace_Hopper"
   },
   {
     "_id": "111111111111111111111114",
     "name": "Lise Meitner",
     "info": "One of the first scientists to discover nuclear fission.",
-    "photo": "https://i.imgur.com/umyq3P5.jpg"
+    "photo": "https://i.imgur.com/umyq3P5.jpg",
+    "attr": "By Smithsonian Institution [No restrictions], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Lise_Meitner"
   },
   {
     "_id": "111111111111111111111115",
     "name": "Tu Youyou",
     "info": "Discovered artemisinin, one of the most effective antimalarial drugs which saved millions of lives.",
-    "photo": "https://i.imgur.com/u5UzcR9.jpg"
+    "photo": "https://i.imgur.com/u5UzcR9.jpg",
+    "attr": "By Bengt Nyman [CC BY-SA 4.0  (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Tu_Youyou"
   },
   {
     "_id": "111111111111111111111116",
     "name": "Chien-shiung Wu",
     "info": "The `First Lady of Physics` who made significant contributions to nuclear physics.",
-    "photo": "https://i.imgur.com/HdYmEQX.jpg"
+    "photo": "https://i.imgur.com/HdYmEQX.jpg",
+    "attr": "By Smithsonian Institution [No restrictions], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Chien-Shiung_Wu"
   },
   {
     "_id": "111111111111111111111117",
     "name": "Mae Jemison",
     "info": "The first African-American woman in space.",
-    "photo": "https://i.imgur.com/30OcmB5.jpg"
+    "photo": "https://i.imgur.com/30OcmB5.jpg",
+    "attr": "By NASA [Public domain], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Mae_Jemison"
   },
   {
     "_id": "111111111111111111111118",
     "name": "Jennifer Doudna",
     "info": "Biochemist and leading figure in CRISPR genome editing.",
-    "photo": "https://i.imgur.com/41lxWia.jpg"
+    "photo": "https://i.imgur.com/41lxWia.jpg",
+    "attr": "By Mrl611 [CC BY-SA 4.0  (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Jennifer_Doudna"
   },
   {
     "_id": "111111111111111111111119",
     "name": "Gertrude Elion",
     "info": "Biochemist and pharmacologist who invented many drugs to treat major diseases, including AIDS.",
-    "photo": "https://i.imgur.com/D3FuTsq.jpg"
+    "photo": "https://i.imgur.com/D3FuTsq.jpg",
+    "attr": "By Unknown author ([1]) [CC BY 4.0  (https://creativecommons.org/licenses/by/4.0)], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Gertrude_B._Elion"
   },
   {
     "_id": "111111111111111111111121",
     "name": "Vera Rubin",
     "info": "Astronomer who pionered work on galaxy rotation rates and discovered evidence for the existence of dark matter.",
-    "photo": "https://i.imgur.com/sQxhtZU.jpg"
+    "photo": "https://i.imgur.com/sQxhtZU.jpg",
+    "attr": "By NASA [Public domain], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Vera_Rubin"
   },
   {
     "_id": "111111111111111111111122",
     "name": "Barbara McClintock",
     "info": "Cytogeneticist. The only woman to receive an unshared Nobel Prize in Physiology or Medicine for her discovery of genetic transposition.",
-    "photo": "https://i.imgur.com/Mdkj7lT.jpg"
+    "photo": "https://i.imgur.com/Mdkj7lT.jpg",
+    "attr": "By Smithsonian Institution/Science Service; Restored by Adam Cuerden [Public domain or No restrictions], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Barbara_McClintock"
   },
   {
     "_id": "111111111111111111111123",
     "name": "Ida Noddack",
     "info": "Chemist and physicist. Discovered element 75, rhenium. Nominated three times for the Nobel Prize in Chemistry.",
-    "photo": "https://i.imgur.com/bdDCDr4.jpg"
+    "photo": "https://i.imgur.com/bdDCDr4.jpg",
+    "attr": "Dome_de [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Ida_Noddack"
   },
   {
     "_id": "111111111111111111111124",
     "name": "Rachel Carson",
     "info": "Marine biologist, author, and conservationist.",
-    "photo": "https://i.imgur.com/kHEFAXu.jpg"
+    "photo": "https://i.imgur.com/kHEFAXu.jpg",
+    "attr": "By US gov (US gov) [Public domain], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Rachel_Carson"
   },
   {
     "_id": "111111111111111111111125",
     "name": "Jane Goodall",
     "info": "Primatologist and top expert on chimpanzees.",
-    "photo": "https://i.imgur.com/oCvzBQs.jpg"
+    "photo": "https://i.imgur.com/oCvzBQs.jpg",
+    "attr": "By Jeekc (Self-published work by Jeekc) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY 2.5  (https://creativecommons.org/licenses/by/2.5)], via Wikimedia Commons",
+    "link": "https://en.wikipedia.org/wiki/Jane_Goodall"
   }
 ]
