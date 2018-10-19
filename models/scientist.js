@@ -6,7 +6,9 @@ const mongoose = require('mongoose');
 const schema = new mongoose.Schema({
   name: { type: String, required: true, default: '' },
   info: { type: String, required: true, default: '' },
-  photo: { type: String, required: true, default: '' }
+  photo: { type: String, required: true, default: '' },
+  attr: { type: String, required: true, default: '' },
+  link: { type: String, default: '' },
 });
 
 // Transform output during `res.json(data)`, `console.log(data)` etc.
