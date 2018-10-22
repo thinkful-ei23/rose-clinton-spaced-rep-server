@@ -1,45 +1,79 @@
-# Thinkful Backend Template
+# UnHidden Figures - Server
 
-A template for developing and deploying Node.js apps.
+<!-- [![NPM Version][npm-image]][npm-url] -->
+<!-- [![Build Status][travis-image]][travis-url] -->
+<!-- [![Downloads Stats][npm-downloads]][npm-url] -->
 
-## Getting started
+## [Live App](https://un-hidden-figures-app-client.herokuapp.com/)
 
-### Setting up a project
+## More Information
+### See: [Client GitHub Repo](https://github.com/thinkful-ei23/rose-clinton-spaced-rep-client)
 
-* Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
-* Clone this repository: `git clone https://github.com/Thinkful-Ed/backend-template YOUR_PROJECT_NAME`
-* Move into the project directory: `cd YOUR_PROJECT_NAME`
-* Install the dependencies: `npm install`
-* Create a new repo on GitHub: https://github.com/new
-    * Make sure the "Initialize this repository with a README" option is left unchecked
-* Update the remote to point to your GitHub repository: `git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME`
+## Main Project Structure
 
-### Working on the project
+```
+spaced-rep-server/
+├── models/ (Mongoose)
+├── node_modules/ (see "Development Setup")
+├── passport/ (Auth strategies)
+├── routes/ (Express Routers)
+├── test/
+├── config.js
+├── index.js (Express App)
+├── package.json (NPM dependencies)
+└── README.md
+```
 
-* Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
-* Run the development task: `npm start`
-    * Starts a server running at http://localhost:8080
-    * Automatically restarts when any of your files change
+## Development setup
 
-## Databases
+To clone the repo to your local development environment, execute the following commands (requires [Node](https://nodejs.org)).
 
-By default, the template is configured to connect to a MongoDB database using Mongoose.  It can be changed to connect to a PostgreSQL database using Knex by replacing any imports of `db-mongoose.js` with imports of `db-knex.js`, and uncommenting the Postgres `DATABASE_URL` lines in `config.js`.
+```sh
+# Clone the repo
+git clone https://github.com/thinkful-ei23/rose-clinton-spaced-rep-server.git
 
-## Deployment
+# Move into the project directory
+cd rose-clinton-spaced-rep-server
 
-Requires the [Heroku CLI client](https://devcenter.heroku.com/articles/heroku-command-line).
+# Install dependencies (in /node_modules/)
+npm i
 
-### Setting up the project on Heroku
+# Run the app:
+npm start
+```
 
-* Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
-* Create the Heroku app: `heroku create PROJECT_NAME`
+## Contributing
 
-* If your backend connects to a database, you need to configure the database URL:
-    * For a MongoDB database: `heroku config:set DATABASE_URL=mongodb://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME`
-    * For a PostgreSQL database: `heroku config:set DATABASE_URL=postgresql://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME`
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-* If you are creating a full-stack app, you need to configure the client origin: `heroku config:set CLIENT_ORIGIN=https://www.YOUR_DEPLOYED_CLIENT.com`
+<!-- ## Release History
 
-### Deploying to Heroku
+* 0.2.1
+    * CHANGE: Update docs (module code remains unchanged)
+* 0.2.0
+    * CHANGE: Remove `setDefaultXYZ()`
+    * ADD: Add `init()`
+* 0.1.1
+    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+* 0.1.0
+    * The first proper release
+    * CHANGE: Rename `foo()` to `bar()`
+* 0.0.1
+    * Work in progress -->
 
-* Push your code to Heroku: `git push heroku master`
+## Authors
+
+* Clinton Owen – clint@clintonowen.com │ [https://github.com/clintonowen](https://github.com/clintonowen) │ [@CoderClint](https://twitter.com/CoderClint)
+* Rose Sorfa – rsorfa@gmail.com │ [https://github.com/Slinkys](https://github.com/Slinkys)
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
